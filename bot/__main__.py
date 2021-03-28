@@ -9,9 +9,7 @@ app = Client(
     "Bot",
     bot_token=CONFIG.BOT_TOKEN,
     api_id=CONFIG.API_ID,
-    api_hash=CONFIG.API_HASH,
-    upload_as_doc=CONFIG.UPLOAD_AS_DOC, 
-    bar_size=CONFIG.BAR_SIZE, 
+    api_hash=CONFIG.API_HASH, 
     workdir=os_path_join(CONFIG.ROOT, CONFIG.WORKDIR),
     plugins=dict(root="bot/handlers")
 )
